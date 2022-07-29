@@ -3,6 +3,7 @@ version: '3'
 services:
   django-app:
     build: '.'
+    image: django_image
     env_file:
       - 'backend/.env'
     ports:
